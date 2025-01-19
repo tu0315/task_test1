@@ -13,6 +13,7 @@ class TestController extends Controller
     {
         // エロクアント
         $values = Test::all();
+        dd($values);
         
         $count = Test::count();
 
@@ -26,5 +27,6 @@ class TestController extends Controller
         dd($values, $count, $first, $where, $queryBuilder);
 
         return view("tests.test", compact('values'));
+        return view('welcome');
     }
 }
