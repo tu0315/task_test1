@@ -30,6 +30,7 @@ Route::prefix('contacts')
 ->controller(ContactFormController::class)
 ->group(function(){
     Route::get('/', 'index')->name('index');
+    Route::get('/create', 'create')->name('create');
 });
 
 Route::get('/dashboard', function () {
