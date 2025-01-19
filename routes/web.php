@@ -24,6 +24,14 @@ Route::get('/', function () {
 
 // Route::resource('contacts', ContactFormController::class);
 
+Route::prefix('contacts')
+->middleware(['auth'])
+->name('contacts.')
+->controller(ContactFormController::class)
+->group(function(){
+    Route::get('/', 'index')->name('index');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
