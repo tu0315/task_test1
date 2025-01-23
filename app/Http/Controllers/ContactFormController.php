@@ -94,7 +94,9 @@ class ContactFormController extends Controller
      */
     public function edit($id)
     {
-        //
+        // 一件取得
+        $contact = Contactform::find($id);
+        return view('contacts.edit', compact('contact'));
     }
 
     /**
