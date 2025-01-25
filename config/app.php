@@ -108,7 +108,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'ja_JP',
 
     /*
     |--------------------------------------------------------------------------
@@ -184,7 +184,7 @@ return [
 
         /*
          * Package Service Providers...
-         */
+         */ 
 
         /*
          * Application Service Providers...
