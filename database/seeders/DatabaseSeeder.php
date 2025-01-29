@@ -17,7 +17,11 @@ class DatabaseSeeder extends Seeder
         // Seeder呼び出し
         $this->call([
             TestSeeder::class,
-            UserSeeder::class
+            UserSeeder::class,
+            AreaSeeder::class,
+            ShopSeeder::class,
+            RouteSeeder::class,
+            RouteShopSeeder::class
         ]);
 
         // Factory設定
